@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title charset="utf-8">欢迎来到MYworld</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../static/image/favicon.png" type="image/x-icon">
+        <style>
+            div#body-head {
+                color: darkred;
+                font-size: 25px;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                scroll-padding: 5px;
+                text-align: center;
+            }
+            div#body-content {
+                color: red;
+                font-size: 12px;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                scroll-padding: 5px;
+                text-align: center;
+                height: 730px;
+            }
+            div#body-foot {
+                color: red;
+                font-size: 12px;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                scroll-padding: 5px;
+                text-align: center;
+            }
+            a {
+                color: green;
+                font-size: 12px;
+                scroll-padding: 5px;
+                text-align: center;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+            }
+            div#body-info {
+                color: red;
+                font-size: 12px;
+                text-align: right;
+                scroll-padding: 10px;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                height: 30px;
+            }
+            div#body-post {
+                color: blue;
+                font-size: 12px;
+                text-align: center;
+                scroll-padding: 10px;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+         <div class="container" id="body-head">
+             <h1 align="center">
+             Welcome to MyWorld!
+             </h1>
+             <p align="center">this is my myworld.about buy and pay relative thing.and you can send some text at this page!</p>
+         </div>
+         <div class="container" id="body-info">
+             {%  if nickname %}
+             <p>
+                 <span>欢迎{{ nickname }}来到myworld</span>
+                 <a href="personal">个人信息</a>
+             </p>
+             {% endif %}
+         </div>
+         <div class="container" id="body-post">
+             <p>
+                 <a href="#">我的商城</a>
+             </p>
+             <p>
+                 <a href="#">我的帖子</a>
+             </p>
+        </div>
+        <div class="container" id="body-content">
+            今日热点
+            <hr/>
+        </div>
+        <div class="container" id="body-foot">
+        	@quicksand！
+        </div>
+    </body>
+</html>
+
+

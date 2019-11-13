@@ -1,0 +1,41 @@
+            div#body-head {
+                color: darkred;
+                font-size: 25px;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                scroll-padding: 5px;
+                text-align: center;
+            }
+            div#body-form {
+                color: red;
+                font-size: 12px;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                scroll-padding: 5px;
+                text-align: center;
+                height: 840px;
+            }
+            div#body-foot {
+                color: red;
+                font-size: 12px;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+                scroll-padding: 5px;
+                text-align: center;
+            }
+            a {
+                color: green;
+                font-size: 12px;
+                scroll-padding: 5px;
+                text-align: center;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                border-top: 1px solid black;
+                border-bottom: 1px solid black;
+            }
