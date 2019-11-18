@@ -27,7 +27,6 @@ SECRET_KEY = 'gjvec#dd=2f*l3*7np=z(sw@$6&5^@=enk78q4#b*snjaf^h^%'
 
 ALLOWED_HOSTS = ['*']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -53,7 +52,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'myworld.urls'
 
-THEME = 'personal_info'
+THEME = 'templates'
 
 TEMPLATES = [
     {
@@ -109,4 +108,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
+# 静态资源存放目录
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'themes',THEME,"static"),
+]
+STATIC_ROOT = '/tmp/static'
+

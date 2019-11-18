@@ -1,0 +1,26 @@
+﻿{% extends "./base.html" %}
+
+{% block main %}
+    <div class="container" id="body-form">
+        <form action="" method="POST">
+            {% csrf_token %}
+            <P>
+            用户名 <input type="text" name="username" maxlength=10 placeholder="请输入用户名">
+            </P>
+            <p>
+            密码 <input type="password" name="password" maxlength=15 placeholder="请输入账户密码">
+            </p>
+            <p>
+            <input type="checkbox">自动登录
+            </p>
+            <p>
+            <button type="reset" name="reset" value="">重置</button>
+            <button type="submit" value="">登录</button>
+            </p>
+            <a href="register">立即注册</a>
+        </form>
+    </div>
+{% endblock %}
+
+
+

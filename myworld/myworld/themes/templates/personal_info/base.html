@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title charset="utf-8">欢迎来到MYworld</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../static/image/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/personal_info.css" type="text/css">
+    <link rel="stylesheet" href="../static/js/personal_info.js">
+</head>
+<body>
+     <div class="container" id="body-head">
+         <h1>
+         Welcome to MyWorld!
+         </h1>
+         <p>this is my myworld.about buy and pay relative thing.and you can send some text at this page!</p>
+     </div>
+     <div class="container" id="body-info">
+         {%  if nickname %}
+         <p>
+             <span>欢迎{{ nickname }}来到myworld</span>
+             <a href="personal">个人信息</a>
+         </p>
+         {% endif %}
+     </div>
+    {% block main %}
+    {% endblock %}
+</body>
+</html>

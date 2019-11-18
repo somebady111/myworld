@@ -1,0 +1,28 @@
+{% extends "./base.html" %}
+
+{% block main %}
+    <div class="container" id="body-head">
+        个人信息修改
+    </div>
+    <div class="container" id="body-content">
+        <form>
+            {% csrf_token %}
+            <p>
+                昵称 <input type="text" name="new_nickname" max="10" placeholder="请输入新的昵称：">
+            </p>
+            <p>
+                用户名 <input type="text" name="new_username" maxlength=15 placeholder="请输入新的用户名：">
+            </p>
+
+            <p>
+                用户密码 <input type="password" name="new_password" maxlength=20 placeholder="请输入新的账户密码：">
+            </p>
+            <p>
+                确认密码 <input type="password" name="re_new_password" maxlength=20 placeholder="再次确认您的账户密码：">
+            </p>
+            <button type="reset" value="">重置</button>
+            <button type="submit" value="">确认信息并提交</button>
+        </form>
+        <a href="personal">返回个人信息页</a>
+    </div>
+{% endblock %}

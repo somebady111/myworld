@@ -17,12 +17,13 @@ from django.conf.urls import url
 from django.contrib import admin
 from .custom_site import custom_site
 
-from personal_info.views import Login,register_user,Personal
+from personal_info.views import Login,register_user,Personal,Modify_info
 
 urlpatterns = [
     url(r'^$',Login),
     url(r'^register/',register_user),
     url(r'personal',Personal),
+    url(r'modify_info',Modify_info),
     url(r'^admin/', custom_site.urls),
     url(r'^super_admin',admin.site.urls),
 ]

@@ -1,0 +1,70 @@
+div#body-content {
+    color: red;
+    font-size: 12px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    scroll-padding: 5px;
+    text-align: center;
+    height: 730px;
+}
+div#body-foot {
+    color: red;
+    font-size: 12px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    scroll-padding: 5px;
+    text-align: center;
+}
+a {
+    color: green;
+    font-size: 12px;
+    scroll-padding: 5px;
+    text-align: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+div#body-info {
+    color: red;
+    font-size: 12px;
+    text-align: right;
+    scroll-padding: 10px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 30px;
+}
+div#body-post {
+    color: blue;
+    font-size: 12px;
+    text-align: center;
+    scroll-padding: 10px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+div#body-head {
+    border: 1px solid black;
+    color: darkred;
+    font-size:30px;
+    scroll-padding: 5px;
+    text-align: center;
+}
+div#body-form {
+        color: red;
+        font-size: 12px;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        scroll-padding: 5px;
+        text-align: center;
+        height: 840px;
+}
